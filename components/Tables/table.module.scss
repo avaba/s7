@@ -1,0 +1,17 @@
+.trow {
+  td, th {
+    &:last-of-type {
+      width: 97px;
+    }
+  }
+}
+
+.name {
+  display: flex;
+  align-items: center;
+
+  .name__text {
+    margin-left: 15px;
+    display: inline-block;
+  }
+}
