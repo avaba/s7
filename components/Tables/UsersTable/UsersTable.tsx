@@ -7,11 +7,9 @@ import {useTypedSelector} from "../../../hooks/useTypedSelector";
 
 interface IUsersTable {
     list: Array<IUser>;
-    loading: boolean;
-    error: string;
 }
 
-const UsersTable = ({list, loading, error}: IUsersTable) => {
+const UsersTable = ({list}: IUsersTable) => {
     const {isAuth} = useTypedSelector(state => state.login)
 
     return (
